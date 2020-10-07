@@ -1,2 +1,5 @@
-# ALPOO-BD-Java-
-Exercícios de ALPOO + Banco de Dados
+# ALPOO-BD-Java
+
+## Exercicio Proposto
+
+
