@@ -106,7 +106,7 @@ public class connectDatabase {
         try {
             Class.forName(DRIVER); // Carrega o Driver
             // Obtém a conexão com a base de dados
-            conn = DriverManager.getConnection(DATABASE_URL, "sa", "Maah1553");
+            conn = DriverManager.getConnection(DATABASE_URL, "sa", "");
             CriandoDatabase = conn.createStatement();
             CriandoDatabase.executeUpdate(eDatabase);
             CriandoDatabase.executeUpdate(UseDatabase);
