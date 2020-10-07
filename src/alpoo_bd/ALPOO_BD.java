@@ -25,7 +25,8 @@ public class ALPOO_BD {
                     + "Digite 1: Listagem de Clientes sem E-mail\n"
                     + "Digite 2: Listagem de Produtos que estão vencidos na data atual\n"
                     + "Digite 3: Quantidades de venda realizada no ano de 2020 (Agrupadas por Cliente)\n"
-                    + "Digite 4: Listagem de Vendas (contendo o valor da mesma)" + "\n");
+                    + "Digite 4: Listagem de Vendas (contendo o valor da mesma)\n"
+                    + "Digite 0: Para Finalizar" + "\n");
             x = myObj.nextInt();
             if (x == 1){
                 ins.selectsemail();
