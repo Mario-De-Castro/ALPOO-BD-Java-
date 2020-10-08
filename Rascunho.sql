@@ -21,8 +21,8 @@ create table Distribuidores (
 cod_dist int primary key IDENTITY(1,1),
 nome_fantasia varchar(120) not null,
 razao_social varchar(120) not null,
-telefone varchar(12) DEFAULT 'N√O INFORMADO',
-email varchar(80) DEFAULT 'N√O INFORMADO'
+telefone varchar(12) DEFAULT 'N√ÉO INFORMADO',
+email varchar(80) DEFAULT 'N√ÉO INFORMADO'
 )
 
 create table Produtos (
@@ -42,7 +42,7 @@ subtotal int not null,
 cod_vendas int
 )
 
-------------------- AlteraÁ„o das Foreign Key --------------
+------------------- Altera√ß√£o das Foreign Key --------------
 
 ALTER TABLE Vendas     
 	ADD CONSTRAINT FK_VendaCliente FOREIGN KEY (cod_cli)     
@@ -79,7 +79,7 @@ VALUES
 
 INSERT INTO dbo.Produtos(preco_venda,descricao,data_validade,preco_custo,estoque)
 VALUES
-(120.00, 'CalÁa Jeans Chile Beans', '2030-09-29', 63.20, 120)
+(120.00, 'Cal√ßa Jeans Chile Beans', '2030-09-29', 63.20, 120)
 
 INSERT INTO dbo.Produtos(preco_venda,descricao,data_validade,preco_custo,estoque)
 VALUES
@@ -99,7 +99,7 @@ VALUES
 
 INSERT INTO dbo.Produtos(preco_venda,descricao,data_validade,preco_custo,estoque)
 VALUES
-(100.00, 'CalÁa Sarja', '2030-09-29', 40.00, 120)
+(100.00, 'Cal√ßa Sarja', '2030-09-29', 40.00, 120)
 
 INSERT INTO dbo.Produtos(preco_venda,descricao,data_validade,preco_custo,estoque)
 VALUES
@@ -126,7 +126,7 @@ VALUES
 
 INSERT INTO dbo.Clientes(nome,data_nasc,endereco,telefone,e_mail)
 VALUES
-('Didjei Azeitona', '1999-06-06', 'Rua das bicicletas - Jardim Sao Paulista - S„o Paulo', '11981114562','')
+('Didjei Azeitona', '1999-06-06', 'Rua das bicicletas - Jardim Sao Paulista - S√£o Paulo', '11981114562','')
 
 INSERT INTO dbo.Clientes(nome,data_nasc,endereco,telefone,e_mail)
 VALUES
@@ -260,7 +260,7 @@ VALUES
 
 ----- Venda 1 -----
 --Adailson Pereira
---Camisa azul Tommi , CalÁa Jeans Chile Beans, Camiseta Vermelha Larcoste, 50+50+120 = 220
+--Camisa azul Tommi , Cal√ßa Jeans Chile Beans, Camiseta Vermelha Larcoste, 50+50+120 = 220
 
 INSERT INTO dbo.Vendas (DataHora,total,cod_cli)
 Values
@@ -268,7 +268,7 @@ Values
 
 --Venda 2 ------
 --Adailson Pereira
---Short Teckel Oclei , CalÁa Jeans Chile Beans, CalÁa Sarja , 30+120+100 = 250
+--Short Teckel Oclei , Cal√ßa Jeans Chile Beans, Cal√ßa Sarja , 30+120+100 = 250
 
 INSERT INTO dbo.Vendas (DataHora,total,cod_cli)
 Values
@@ -292,7 +292,7 @@ Values
 
 --Venda 5 ------
 --Didjei Azeitona
---CalÁa Sarja, Blusa de Frio Ardidas, Camiseta Basica Oclei , 100+70+50 = 220
+--Cal√ßa Sarja, Blusa de Frio Ardidas, Camiseta Basica Oclei , 100+70+50 = 220
 
 INSERT INTO dbo.Vendas (DataHora,total,cod_cli)
 Values
@@ -300,7 +300,7 @@ Values
 
 --Venda 6 ------
 --Didjei Azeitona
--- CalÁa jeans Chile Beans 2 unidades, Camiseta Basica Oclei , (120*2)+50 = 290
+-- Cal√ßa jeans Chile Beans 2 unidades, Camiseta Basica Oclei , (120*2)+50 = 290
 
 INSERT INTO dbo.Vendas (DataHora,total,cod_cli)
 Values
@@ -308,7 +308,7 @@ Values
 
 --Venda 7 ------
 --Derek Augusto
--- CalÁa Sarja, Camiseta Basica Oclei , Bermuda Jeans Chile Beans 100+50+50 = 200
+-- Cal√ßa Sarja, Camiseta Basica Oclei , Bermuda Jeans Chile Beans 100+50+50 = 200
 
 INSERT INTO dbo.Vendas (DataHora,total,cod_cli)
 Values
@@ -332,7 +332,7 @@ Values
 
 --Venda 10 ------
 --Leonardo diCaprio
--- Camisa azul Tommi , CalÁa Jeans Chile Beans, Camiseta Vermelha Larcoste, 50+50+120 = 220
+-- Camisa azul Tommi , Cal√ßa Jeans Chile Beans, Camiseta Vermelha Larcoste, 50+50+120 = 220
 
 INSERT INTO dbo.Vendas (DataHora,total,cod_cli)
 Values
