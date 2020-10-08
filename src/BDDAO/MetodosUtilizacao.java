@@ -201,7 +201,7 @@ public class MetodosUtilizacao implements ManipulaBanco{
         String DATABASE_URL = "jdbc:sqlserver://localhost:1433;databaseName=Loja";
         try {
             Class.forName(DRIVER);
-            connection = DriverManager.getConnection(DATABASE_URL, "sa", "Maah1553");
+            connection = DriverManager.getConnection(DATABASE_URL, "sa", "");
             smt = connection.createStatement();
         } catch (SQLException|ClassNotFoundException ex) {
             System.err.println(ex.getMessage());
